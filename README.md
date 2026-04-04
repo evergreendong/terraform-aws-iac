@@ -38,6 +38,7 @@ This infrastructure is deployed using Terraform and follows real-world DevOps pr
 - Production-style infrastructure design
 
 ---
+<<<<<<< HEAD
 ## 🧱 Project Structure
 
 ```
@@ -55,6 +56,23 @@ terraform-aws-iac/
 ├── architecture.png # Architecture diagram
 └── README.md
 ```
+=======
+
+## 🧱 Project Structure
+│
+├── modules/
+│ ├── network/ # VPC, subnets, routing
+│ ├── compute/ # EC2 instance + security group
+│ └── database/ # RDS + subnet group
+│
+├── main.tf # Root module (wiring layer)
+├── variables.tf
+├── outputs.tf
+├── snapshot.png # Web UI screenshot
+├── architecture.png # Architecture diagram
+└── README.md
+
+>>>>>>> 214332a (fix project structure formatting)
 
 ---
 
@@ -78,10 +96,17 @@ Stored in Amazon S3
 State locking handled via DynamoDB
 
 ## 🎯 What I Learned
+<<<<<<< HEAD
 ```
+=======
+>>>>>>> 214332a (fix project structure formatting)
 Designing modular Terraform architecture
 Managing infrastructure state safely
 Refactoring Terraform code without destroying resources
 Understanding dependencies between AWS components
+<<<<<<< HEAD
 Applying real-world DevOps practices
 ```
+=======
+Applying real-world DevOps practices
+>>>>>>> 214332a (fix project structure formatting)
