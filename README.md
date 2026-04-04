@@ -57,21 +57,6 @@ terraform-aws-iac/
 └── README.md
 ```
 
-## 🧱 Project Structure
-│
-├── modules/
-│ ├── network/ # VPC, subnets, routing
-│ ├── compute/ # EC2 instance + security group
-│ └── database/ # RDS + subnet group
-│
-├── main.tf # Root module (wiring layer)
-├── variables.tf
-├── outputs.tf
-├── snapshot.png # Web UI screenshot
-├── architecture.png # Architecture diagram
-└── README.md
-
-
 ---
 
 ## 🛠️ Tech Stack
@@ -90,23 +75,12 @@ terraform plan
 terraform apply
 ```
 ## Remote State
-Stored in Amazon S3
-State locking handled via DynamoDB
+- Stored in Amazon S3
+- State locking handled via DynamoDB
 
 
 ## 🎯 What I Learned
 
-```
-
-Designing modular Terraform architecture
-Managing infrastructure state safely
-Refactoring Terraform code without destroying resources
-Understanding dependencies between AWS components
-
-Applying real-world DevOps practices
-```
-
-Applying real-world DevOps practices
 
 
 - Designing modular Terraform architecture
@@ -114,6 +88,7 @@ Applying real-world DevOps practices
 - Refactoring Terraform code without destroying resources
 - Understanding dependencies between AWS components
 - Applying real-world DevOps practices
+
 
 ## 🧩 Challenges & Solutions
 
